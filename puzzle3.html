@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Background for puzzle3 page with external SVG */
+        body.puzzle3 {
+            background-color: #87CEEB; /* Fallback light blue background */
+            background-image: url('images/bg_3.svg'); /* Load the SVG from the images folder */
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the SVG to cover the entire page */
+            background-position: center; /* Center the SVG */
+        }
+    </style>
+</head>
+<body class="puzzle3">
+    <div class="return-button">
+        <a href="index.html">return</a>
+    </div>
+
+    <div class="puzzle-container pyramid">
+        <div class="row">
+            <div class="puzzle" id="puzzle1" tabindex="0">
+                <div class="clue">MOUNTAIN</div>
+                <div class="icon">
+                    <img src="images/2.1.png" alt="Icon 1" />
+                </div>
+                <div class="solution" id="solution1" data-solution="OLYMPUS">_ _ _ _ _</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="puzzle" id="puzzle2" tabindex="0">
+                <div class="clue">SKY</div>
+                <div class="icon">
+                    <img src="images/2.2.png" alt="Icon 2" />
+                </div>
+                <div class="solution" id="solution2" data-solution="ZEUS">_ _ _ _ _</div>
+            </div>
+            <div class="puzzle" id="puzzle3" tabindex="0">
+                <div class="clue">HERO</div>
+                <div class="icon">
+                    <img src="images/2.3.png" alt="Icon 3" />
+                </div>
+                <div class="solution" id="solution3" data-solution="HERA">_ _ _ _ _</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="puzzle" id="puzzle4" tabindex="0">
+                <div class="clue">PRADA</div>
+                <div class="icon">
+                    <img src="images/2.4.2.png" alt="Icon 4.1" />
+                    <img src="images/2.1.png" alt="Icon 4.2" />
+                </div>
+                <div class="solution" id="solution4" data-solution="HERMES">_ _ _ _ _</div>
+            </div>
+            <div class="puzzle" id="puzzle5" tabindex="0">
+                <div class="clue">POISON</div>
+                <div class="icon">
+                    <img src="images/2.5.1.png" alt="Icon 5.1" />
+                    <img src="images/2.5.2.png" alt="Icon 5.2" />
+                </div>
+                <div class="solution" id="solution5" data-solution="POSEIDON">_ _ _ _ _ _ _</div>
+            </div>
+            <div class="puzzle" id="puzzle6" tabindex="0">
+                <div class="clue">GAME</div>
+                <div class="icon">
+                    <img src="images/2.1.png" alt="Icon 6" />
+                </div>
+                <div class="solution" id="solution6" data-solution="HADES">_ _ _ _ _</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

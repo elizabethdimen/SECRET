@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Background for puzzle4 page with external SVG */
+        body.puzzle4 {
+            background-color: #401111; /* Fallback dark red background */
+            background-image: url('images/bg_4.svg'); /* Load the SVG from the images folder */
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the SVG to cover the entire page */
+            background-position: center; /* Center the SVG */
+        }
+    </style>
+</head>
+<body class="puzzle4">
+    <div class="return-button">
+        <a href="index.html">return</a>
+    </div>
+
+    <div class="puzzle-container">
+        <div class="puzzle" id="puzzle1" tabindex="0">
+            <div class="clue">COWGIRL</div>
+            <div class="icon">
+                <img src="images/3.1.1.png" alt="Icon" />
+                <img src="images/3.1.2.png" alt="Icon" />
+            </div>
+            <div class="solution" id="solution1" data-solution="MINOTAUR">_ _ _ _ _</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

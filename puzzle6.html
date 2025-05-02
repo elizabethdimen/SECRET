@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Background for puzzle6 page with external SVG */
+        body.puzzle6 {
+            background-color: #0d2649; /* Updated dark blue background */
+            background-image: url('images/bg_6.svg'); /* Load the SVG from the images folder */
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the SVG to cover the entire page */
+            background-position: center; /* Center the SVG */
+        }
+    </style>
+</head>
+<body class="puzzle6">
+    <div class="return-button">
+        <a href="index.html">return</a>
+    </div>
+
+    <div class="puzzle-container">
+        <!-- Puzzle 1 -->
+        <div class="puzzle" id="puzzle0" tabindex="0">
+            <div class="clue">MEMO</div>
+            <div class="icon">
+                <img src="images/4.0.png" alt="Look Icon" />
+            </div>
+            <div class="solution" id="solution1" data-solution="CHECK">_ _ _ _</div>
+        </div>
+
+        <!-- Puzzle 2 -->
+        <div class="puzzle" id="puzzle1" tabindex="0">
+            <div class="clue">OUTSLIDE</div>
+            <div class="icon">
+                <img src="images/4.2.png" alt="Outside Icon" />
+            </div>
+            <div class="solution" id="solution2" data-solution="INSIDE">_ _ _ _ _ _</div>
+        </div>
+
+        <!-- Puzzle 3 -->
+        <div class="puzzle" id="puzzle2" tabindex="0">
+            <div class="clue">DOOR</div>
+            <div class="icon">
+                <img src="images/4.1.png" alt="Door Icon" />
+            </div>
+            <div class="solution" id="solution3" data-solution="YOUR">_ _ _ _</div>
+        </div>
+
+        <!-- Puzzle 4 -->
+        <div class="puzzle" id="puzzle3" tabindex="0">
+            <div class="clue">WINTER</div>
+            <div class="icon">
+                <img src="images/4.4.1.png" alt="Winter Icon" />
+                <img src="images/4.4.2.png" alt="Wintern" />
+            </div>
+            <div class="solution" id="solution4" data-solution="TOWER">_ _ _ _ _</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

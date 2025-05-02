@@ -1,0 +1,258 @@
+/* General body styles */
+body {
+    font-family: 'MyCustomFont', sans-serif; /* Apply the custom font */
+    background-color: #87CEEB; /* Sky blue background */
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Add a thin black border to all text */
+body, body * {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* Navigation styles for index.html */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Background for puzzle1 page */
+body.puzzle1 {
+    background-color: #D8BFD8; /* Solid lilac background */
+}
+
+/* Background for puzzle2 page */
+body.puzzle2 {
+    background-color: #90EE90; /* Light green background */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Background for puzzle3 page */
+body.puzzle3 {
+    background-color: #87CEEB; /* Sky blue background */
+}
+
+/* Background for puzzle4 page */
+body.puzzle4 {
+    background-color: #401111; /* Dark red background */
+}
+
+/* Background for puzzle5 page */
+body.puzzle5 {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Puzzle container styles */
+.puzzle-container {
+    display: flex;
+    justify-content: center; /* Center the puzzles horizontally */
+    align-items: center; /* Align the puzzles vertically */
+    gap: 20px; /* Reduce space between puzzles */
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Puzzle styles */
+.puzzle {
+    background: #32244e; /* Dark purple background */
+    border: 2px solid black;
+    outline: 4px solid lightgray;
+    padding: 20px;
+    width: 200px; /* Fixed width for consistency */
+    height: 200px; /* Fixed height for consistency */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'MyCustomFont', sans-serif;
+    color: white; /* Ensure text is visible on the dark background */
+}
+
+.puzzle .clue,
+.puzzle .solution {
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+/* Icon container for multiple icons */
+.puzzle .icon {
+    display: flex; /* Arrange icons side by side */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align the icons vertically */
+    gap: 10px; /* Space between the icons */
+}
+
+.puzzle .icon img {
+    height: 3em; /* Match the height of the text */
+    vertical-align: middle; /* Align the icons with the text */
+}
+
+.puzzle.active {
+    background: #2e3a7f;
+}
+
+.puzzle.correct {
+    background: green;
+    color: white;
+    border-color: darkgreen;
+}
+
+/* Pyramid layout for Puzzle 3 */
+.pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between rows */
+    margin-top: 50px;
+}
+
+/* Row styles */
+.pyramid .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between puzzles in a row */
+}
+
+/* Rainbow pixels */
+.rainbow-pixels {
+    display: flex;
+    justify-content: center; /* Center the pixels horizontally */
+    align-items: center; /* Align the pixels vertically */
+    gap: 20px; /* Space between each pixel */
+}
+
+.rainbow-pixels .pixel {
+    width: 1cm;
+    height: 1cm;
+}
+
+.rainbow-pixels .red {
+    background-color: red;
+}
+
+.rainbow-pixels .orange {
+    background-color: orange;
+}
+
+.rainbow-pixels .yellow {
+    background-color: yellow;
+}
+
+.rainbow-pixels .green {
+    background-color: green;
+}
+
+.rainbow-pixels .blue {
+    background-color: blue;
+}
+
+.rainbow-pixels .indigo {
+    background-color: rgb(54, 25, 128);
+}
+
+.rainbow-pixels .violet {
+    background-color: rgb(139, 39, 197);
+}
+
+/* Return button styles */
+.return-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #32244e;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'MyCustomFont', sans-serif;
+    text-align: center;
+    z-index: 9999;
+}
+
+.return-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.return-button a:hover {
+    text-decoration: underline;
+}
+
+/* Font face */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Lingo.ttf') format('truetype');
+}
+
+/* Puzzle icon styles for Puzzle 5 */
+body.puzzle5 .puzzle .icon {
+    font-size: 40px; /* Slightly smaller font size for the "?" */
+    text-align: center;
+    margin: 10px 0; /* Add some spacing around the icon */
+}
+
+/* Node container styles */
+.node-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between nodes and lines */
+    margin-top: 20px;
+}
+
+/* Node styles */
+.node {
+    width: 50px;
+    height: 50px;
+    background-color: #32244e; /* Dark purple background */
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.node a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Line styles */
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}

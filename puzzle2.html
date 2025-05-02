@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Background for puzzle2 page with external SVG */
+        body.puzzle2 {
+            background-color: #90EE90; /* Fallback light green background */
+            background-image: url('images/bg_2.svg'); /* Load the SVG from the images folder */
+            background-repeat: no-repeat;
+            background-size: cover; /* Scale the SVG to cover the entire page */
+            background-position: center; /* Center the SVG */
+        }
+    </style>
+</head>
+<body class="puzzle2">
+    <div class="return-button">
+        <a href="index.html">return</a>
+    </div>
+
+    <!-- Scattered pixels -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const body = document.body;
+            const colors = ["orange", "yellow"];
+            const numPixels = 20; // Number of scattered pixels
+
+            for (let i = 0; i < numPixels; i++) {
+                const pixel = document.createElement("div");
+                pixel.classList.add("pixel-scatter");
+                pixel.classList.add(colors[Math.floor(Math.random() * colors.length)]);
+
+                // Randomize position
+                pixel.style.left = `${Math.random() * window.innerWidth}px`;
+                pixel.style.top = `${Math.random() * window.innerHeight}px`;
+
+                body.appendChild(pixel);
+            }
+        });
+    </script>
+
+    <div class="puzzle-container">
+        <div class="puzzle" id="puzzle1" tabindex="0">
+            <div class="clue">SAD</div>
+            <div class="icon">
+                <img src="images/1.1.png" alt="Sun with bracket" />
+            </div>
+            <div class="solution" id="solution1" data-solution="HAPPY">_ _ _ _ _</div>
+        </div>
+        <div class="puzzle" id="puzzle2" tabindex="0">
+            <div class="clue">DEATH</div>
+            <div class="icon">
+                <img src="images/1.2.png" alt="Concentric circles with bracket" />
+            </div>
+            <div class="solution" id="solution2" data-solution="BIRTH">_ _ _ _ _</div>
+        </div>
+        <div class="puzzle" id="puzzle3" tabindex="0">
+            <div class="clue">KNIGHT</div>
+            <div class="icon">
+                <img src="images/1.3.1.png" alt="Gears Icon" />
+                <img src="images/1.3.2.png" alt="Shield Icon" />
+            </div>
+            <div class="solution" id="solution3" data-solution="DAY">_ _ _</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
